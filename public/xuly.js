@@ -18,7 +18,7 @@ socket.on("server-send-danhsach-users", function(data){
 });
 
 socket.on("1100", function(data){
-    $("#listMessages").append("<div class='ms'>"+ data.un +": "+ data.nd +"</div>");
+    $("#listMessages").append("<div class='ms'> <span class='tb'>"+ data.un +"</span>: "+ data.nd +"</div>");
 });
 
 socket.on("ai-do-dang-go-chu", function(data){
